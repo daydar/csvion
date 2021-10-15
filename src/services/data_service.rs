@@ -15,7 +15,7 @@ pub fn get_raw_csv() -> String {
 }
 
 fn get_raw_csv_string() -> Result<String, Box<dyn Error>> {
-    let file = File::open("username.csv")?;
+    let file = File::open("data/username.csv")?;
     let mut reader = csv::Reader::from_reader(file);
     let mut raw_text = String::new();
 
