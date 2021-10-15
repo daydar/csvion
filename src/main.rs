@@ -14,6 +14,6 @@ fn index() -> &'static str {
 
 fn main() {
     rocket::ignite()
-    .mount("/", routes![index, routes::data_routes::csv_data])
+    .mount("/", routes![index, routes::data_routes::csv_data_raw])
     .launch();
 }

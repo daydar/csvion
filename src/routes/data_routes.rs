@@ -1,8 +1,7 @@
 use crate::services::data_service::*;
 
-#[get("/data")]
-pub fn csv_data() -> &'static str {
-    let s = test();
-    return s;
-
+#[get("/raw")]
+pub fn csv_data_raw() -> String {
+    let result = get_raw_csv();
+    return result;
 }
