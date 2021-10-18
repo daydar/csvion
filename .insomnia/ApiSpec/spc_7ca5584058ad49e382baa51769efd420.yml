@@ -1,8 +1,76 @@
 _id: spc_7ca5584058ad49e382baa51769efd420
 type: ApiSpec
 parentId: wrk_16f480300f0a41efb90c5c3755c86d48
-modified: 1634597308063
+modified: 1634598930758
 created: 1634597308063
 fileName: insomnia.yaml
-contents: ""
+contents: "openapi: 3.0.3
+
+  info:
+
+  \  title: csvion
+
+  \  description: specification for csvion
+
+  \  termsOfService: \"\"
+
+  \  contact:
+
+  \    email: example@example.com
+
+  \  version: 1.0.0
+
+  externalDocs:
+
+  \  description: Find out more
+
+  \  url: \"\"
+
+  servers:
+
+  \  - description: Development
+
+  \    url: \"\"
+
+  \  - description: Production
+
+  \    url: \"\"
+
+  tags:
+
+  \  - name: Root
+
+  \    description: the root url
+
+  \  - name: csv
+
+  \    description: the filetype
+
+  paths:
+
+  \  /:
+
+  \    get:
+
+  \      tags:
+
+  \      - Root
+
+  \      summary: get Index
+
+  \      operationId: root
+
+  \      responses:
+
+  \        \"200\":
+
+  \          description: the root is avalaible
+
+  \          content:
+
+  \            text/plain:
+
+  \              example: \"CSVion\"
+
+  \              "
 contentType: yaml
