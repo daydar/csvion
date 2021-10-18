@@ -16,6 +16,8 @@ fn index() -> &'static str {
 
 pub fn rocket_builder() -> Rocket<Build> {
     rocket::build()
-    .mount("/", routes![index, routes::data_routes::csv_data_raw])
+    .mount("/api", routes![index, routes::data_routes::csv_data_raw])
+    .mount("/", routes![routes::ping::ping])
     .mount("/data", FileServer::from(relative!("data")))
+    
 }
