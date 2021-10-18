@@ -1,3 +1,4 @@
+pub mod basic;
 pub mod csv;
 pub mod ping;
 
