@@ -1,5 +1,5 @@
 #[cfg(test)]
-mod test {
+mod csv_test {
     use csvion::rocket_builder;
     use rocket::local::blocking::Client;
     use rocket::http::Status;
