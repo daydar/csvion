@@ -1,7 +1,7 @@
 _id: spc_7ca5584058ad49e382baa51769efd420
 type: ApiSpec
 parentId: wrk_16f480300f0a41efb90c5c3755c86d48
-modified: 1634598930758
+modified: 1635542076790
 created: 1634597308063
 fileName: insomnia.yaml
 contents: "openapi: 3.0.3
@@ -30,7 +30,7 @@ contents: "openapi: 3.0.3
 
   \  - description: Development
 
-  \    url: \"\"
+  \    url: \"localhost:8000\"
 
   \  - description: Production
 
@@ -56,7 +56,7 @@ contents: "openapi: 3.0.3
 
   \      - Root
 
-  \      summary: get Index
+  \      summary: get root response
 
   \      operationId: root
 
@@ -70,7 +70,11 @@ contents: "openapi: 3.0.3
 
   \            text/plain:
 
-  \              example: \"CSVion\"
+  \              schema:\ 
+
+  \                type: string
+
+  \                example: \"CSVion\"
 
   \              "
 contentType: yaml

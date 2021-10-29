@@ -1,0 +1,11 @@
+_id: ut_36fcfe9900e646508cb40b88322b6590
+type: UnitTest
+parentId: uts_d91fdc00856643128acea2e07da971f6
+modified: 1635542378568
+created: 1635539551942
+requestId: req_wrk_16f480300f0a41efb90c5c3755c86d48dc76e9f0
+name: GetProjectName
+code: |
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
+  expect(response1.data).to.equal("CSVion");

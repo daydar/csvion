@@ -1,0 +1,21 @@
+_id: req_wrk_16f480300f0a41efb90c5c3755c86d48dc76e9f0
+type: Request
+parentId: fld_wrk_16f480300f0a41efb90c5c3755c86d48e96857c5
+modified: 1635538491050
+created: 1635538491050
+url: "{{ base_url }}/"
+name: get Index
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1635538491050
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
